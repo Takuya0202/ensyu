@@ -1,91 +1,270 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="ページ-1" id="uKJyJdHHgdFntwMrQvcH">
-    <mxGraphModel dx="1245" dy="689" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="text;fontSize=20;fontStyle=1;align=center;" value="イベントストーミング 記法凡例" vertex="1">
-          <mxGeometry height="40" width="600" x="100" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ev1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=13;fontStyle=1;" value="ドメインイベント" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="110" as="geometry" />
-        </mxCell>
-        <mxCell id="ev1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="システムの中で起きた出来事。過去形で表現する。例: 案が投稿された" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="110" as="geometry" />
-        </mxCell>
-        <mxCell id="cmd1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontColor=#000000;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" value="コマンド" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="200" as="geometry" />
-        </mxCell>
-        <mxCell id="cmd1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="ユーザーやシステムが行うアクション。命令形で表現する。例: 案を投稿する" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="200" as="geometry" />
-        </mxCell>
-        <mxCell id="agg1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffff88;fontColor=#000000;strokeColor=#999900;fontSize=13;fontStyle=1;" value="アグリゲート" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="290" as="geometry" />
-        </mxCell>
-        <mxCell id="agg1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="コマンドとイベントが紐づくドメインオブジェクト。例: プロダクト案、申請、メッセージ" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="290" as="geometry" />
-        </mxCell>
-        <mxCell id="act1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;fontColor=#000000;strokeColor=#d6b656;fontSize=13;fontStyle=1;" value="アクター" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="380" as="geometry" />
-        </mxCell>
-        <mxCell id="act1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="コマンドを起こすユーザー。付箋サイズは小。例: 投稿者、申請者、チームメンバー" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="380" as="geometry" />
-        </mxCell>
-        <mxCell id="pol1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontColor=#000000;strokeColor=#9673a6;fontSize=13;fontStyle=1;" value="ポリシー" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="pol1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="「〜したとき、〜する」形のビジネスルール。例: 申請が承認されたらチームチャンネルに追加する" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="rm1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontColor=#000000;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="リードモデル" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="rm1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="ユーザーが見るUI上のビュー・一覧。例: 案一覧、申請一覧、DM一覧" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="ext1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;fontColor=#000000;strokeColor=#b85450;fontSize=13;fontStyle=1;" value="外部システム" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="ext1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="外部のサービスや連携先。例: Clerk（認証）、通知サービス" vertex="1">
-          <mxGeometry height="60" width="300" x="310" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="div1" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="175" as="sourcePoint" />
-            <mxPoint x="630" y="175" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="div2" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="265" as="sourcePoint" />
-            <mxPoint x="630" y="265" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="div3" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="355" as="sourcePoint" />
-            <mxPoint x="630" y="355" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="div4" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="445" as="sourcePoint" />
-            <mxPoint x="630" y="445" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="div5" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="535" as="sourcePoint" />
-            <mxPoint x="630" y="535" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="div6" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="625" as="sourcePoint" />
-            <mxPoint x="630" y="625" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="ページ-1" id="uKJyJdHHgdFntwMrQvcH">
+        <mxGraphModel dx="693" dy="373" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="イベントストーミング 記法凡例" style="text;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="30" width="600" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev1" value="ドメインイベント" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="110" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ev1desc" value="システムの中で起きた出来事。過去形で表現する。例: 案が投稿された" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="110" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="cmd1" value="コマンド" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontColor=#000000;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="200" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="cmd1desc" value="ユーザーやシステムが行うアクション。命令形で表現する。例: 案を投稿する" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="200" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg1" value="アグリゲート" style="rounded=1;whiteSpace=wrap;fillColor=#ffff88;fontColor=#000000;strokeColor=#999900;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="290" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="agg1desc" value="コマンドとイベントが紐づくドメインオブジェクト。例: プロダクト案、申請、メッセージ" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="290" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="act1" value="アクター" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;fontColor=#000000;strokeColor=#d6b656;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="380" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="act1desc" value="コマンドを起こすユーザー。付箋サイズは小。例: 投稿者、申請者、チームメンバー" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="380" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pol1" value="ポリシー" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontColor=#000000;strokeColor=#9673a6;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="470" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pol1desc" value="「〜したとき、〜する」形のビジネスルール。例: 申請が承認されたらチームチャンネルに追加する" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="470" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rm1" value="リードモデル" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontColor=#000000;strokeColor=#82b366;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="560" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rm1desc" value="ユーザーが見るUI上のビュー・一覧。例: 案一覧、申請一覧、DM一覧" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="560" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ext1" value="外部システム" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;fontColor=#000000;strokeColor=#b85450;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="650" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ext1desc" value="外部のサービスや連携先。例: better-auth、通知サービス" style="text;fontSize=12;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="650" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="div1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="175" as="sourcePoint"/>
+                        <mxPoint x="630" y="175" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="div2" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="265" as="sourcePoint"/>
+                        <mxPoint x="630" y="265" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="div3" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="355" as="sourcePoint"/>
+                        <mxPoint x="630" y="355" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="div4" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="445" as="sourcePoint"/>
+                        <mxPoint x="630" y="445" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="div5" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="535" as="sourcePoint"/>
+                        <mxPoint x="630" y="535" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="div6" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="90" y="625" as="sourcePoint"/>
+                        <mxPoint x="630" y="625" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="認証フロー" id="auth-flow-001">
+        <mxGraphModel dx="693" dy="373" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="auth_title" value="ユーザー認証フロー (better-auth)" style="text;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="30" width="800" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_label1" value="新規登録" style="text;fontSize=12;fontStyle=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="130" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_label2" value="ログイン" style="text;fontSize=12;fontStyle=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_label3" value="OAuth" style="text;fontSize=12;fontStyle=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="450" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_label4" value="ログアウト" style="text;fontSize=12;fontStyle=1;align=right;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="580" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_actor" value="ゲストユーザー" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_cmd" value="新規登録する" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_agg" value="ユーザー" style="rounded=1;whiteSpace=wrap;fillColor=#ffff88;strokeColor=#999900;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_ext" value="better-auth" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_ev1" value="ユーザーが登録された" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="130" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_ev2" value="セッションが作成された" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="130" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_a1" style="endArrow=block;endFill=1;" parent="1" source="auth_f1_actor" target="auth_f1_cmd" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_a2" style="endArrow=block;endFill=1;" parent="1" source="auth_f1_cmd" target="auth_f1_agg" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_a3" style="endArrow=block;endFill=1;" parent="1" source="auth_f1_agg" target="auth_f1_ext" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_a4" style="endArrow=block;endFill=1;" parent="1" source="auth_f1_ext" target="auth_f1_ev1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f1_a5" style="endArrow=block;endFill=1;" parent="1" source="auth_f1_ev1" target="auth_f1_ev2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_actor" value="ゲストユーザー" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_cmd" value="ログインする" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_agg" value="セッション" style="rounded=1;whiteSpace=wrap;fillColor=#ffff88;strokeColor=#999900;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_ext" value="better-auth" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_ev_ok" value="ログインに成功した" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="280" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_ev_ng" value="ログインに失敗した" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#FF0000;strokeWidth=2;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="355" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_pol" value="セッションを作成する" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="280" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_a1" style="endArrow=block;endFill=1;" parent="1" source="auth_f2_actor" target="auth_f2_cmd" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_a2" style="endArrow=block;endFill=1;" parent="1" source="auth_f2_cmd" target="auth_f2_agg" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_a3" style="endArrow=block;endFill=1;" parent="1" source="auth_f2_agg" target="auth_f2_ext" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_a4" style="endArrow=block;endFill=1;" parent="1" source="auth_f2_ext" target="auth_f2_ev_ok" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_a5" style="endArrow=block;endFill=1;" parent="1" source="auth_f2_ext" target="auth_f2_ev_ng" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f2_a6" style="endArrow=block;endFill=1;" parent="1" source="auth_f2_ev_ok" target="auth_f2_pol" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_actor" value="ゲストユーザー" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_cmd" value="OAuthでログインする" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_ext1" value="Google / GitHub" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_ev1" value="OAuth認証が完了した" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="450" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_pol" value="未登録なら自動登録する" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="450" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_ev2" value="セッションが作成された" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="450" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_a1" style="endArrow=block;endFill=1;" parent="1" source="auth_f3_actor" target="auth_f3_cmd" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_a2" style="endArrow=block;endFill=1;" parent="1" source="auth_f3_cmd" target="auth_f3_ext1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_a3" style="endArrow=block;endFill=1;" parent="1" source="auth_f3_ext1" target="auth_f3_ev1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_a4" style="endArrow=block;endFill=1;" parent="1" source="auth_f3_ev1" target="auth_f3_pol" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f3_a5" style="endArrow=block;endFill=1;" parent="1" source="auth_f3_pol" target="auth_f3_ev2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_actor" value="認証済みユーザー" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="580" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_cmd" value="ログアウトする" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="580" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_agg" value="セッション" style="rounded=1;whiteSpace=wrap;fillColor=#ffff88;strokeColor=#999900;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="580" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_ext" value="better-auth" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="580" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_ev1" value="セッションが削除された" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="580" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_ev2" value="ログアウトした" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;strokeColor=#BD7000;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="580" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_a1" style="endArrow=block;endFill=1;" parent="1" source="auth_f4_actor" target="auth_f4_cmd" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_a2" style="endArrow=block;endFill=1;" parent="1" source="auth_f4_cmd" target="auth_f4_agg" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_a3" style="endArrow=block;endFill=1;" parent="1" source="auth_f4_agg" target="auth_f4_ext" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_a4" style="endArrow=block;endFill=1;" parent="1" source="auth_f4_ext" target="auth_f4_ev1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_f4_a5" style="endArrow=block;endFill=1;" parent="1" source="auth_f4_ev1" target="auth_f4_ev2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth_div1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="235" as="sourcePoint"/>
+                        <mxPoint x="1030" y="235" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="auth_div2" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="428" as="sourcePoint"/>
+                        <mxPoint x="1030" y="428" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="auth_div3" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="548" as="sourcePoint"/>
+                        <mxPoint x="1030" y="548" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

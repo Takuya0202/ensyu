@@ -20,6 +20,7 @@
 | 認証まわりの実装 | `arch/auth.md` |
 | フロントエンド機能の実装 | `arch/frontend.md`, `arch/api-contract.md` |
 | 機能の仕様・スコープ確認 | `product/mvp-features.md`, `product/user-flows.md` |
+| 認証フローの確認 | `product/event-storming-legend.drawio`（認証フローページ） |
 | サービス全体像・背景の確認 | `product/overview.md` |
 
 ## 運用ルール
