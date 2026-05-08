@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="uKJyJdHHgdFntwMrQvcH">
+    <mxGraphModel dx="1245" dy="689" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;fontSize=20;fontStyle=1;align=center;" value="イベントストーミング 記法凡例" vertex="1">
+          <mxGeometry height="40" width="600" x="100" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ev1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontSize=13;fontStyle=1;" value="ドメインイベント" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ev1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="システムの中で起きた出来事。過去形で表現する。例: 案が投稿された" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cmd1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;fontColor=#000000;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" value="コマンド" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="cmd1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="ユーザーやシステムが行うアクション。命令形で表現する。例: 案を投稿する" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="agg1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#ffff88;fontColor=#000000;strokeColor=#999900;fontSize=13;fontStyle=1;" value="アグリゲート" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="agg1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="コマンドとイベントが紐づくドメインオブジェクト。例: プロダクト案、申請、メッセージ" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="act1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;fontColor=#000000;strokeColor=#d6b656;fontSize=13;fontStyle=1;" value="アクター" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="act1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="コマンドを起こすユーザー。付箋サイズは小。例: 投稿者、申請者、チームメンバー" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="pol1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;fontColor=#000000;strokeColor=#9673a6;fontSize=13;fontStyle=1;" value="ポリシー" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="pol1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="「〜したとき、〜する」形のビジネスルール。例: 申請が承認されたらチームチャンネルに追加する" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="rm1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;fontColor=#000000;strokeColor=#82b366;fontSize=13;fontStyle=1;" value="リードモデル" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="rm1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="ユーザーが見るUI上のビュー・一覧。例: 案一覧、申請一覧、DM一覧" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" parent="1" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;fontColor=#000000;strokeColor=#b85450;fontSize=13;fontStyle=1;" value="外部システム" vertex="1">
+          <mxGeometry height="60" width="180" x="100" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1desc" parent="1" style="text;fontSize=12;align=left;verticalAlign=middle;" value="外部のサービスや連携先。例: Clerk（認証）、通知サービス" vertex="1">
+          <mxGeometry height="60" width="300" x="310" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="div1" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="175" as="sourcePoint" />
+            <mxPoint x="630" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="div2" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="265" as="sourcePoint" />
+            <mxPoint x="630" y="265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="div3" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="355" as="sourcePoint" />
+            <mxPoint x="630" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="div4" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="445" as="sourcePoint" />
+            <mxPoint x="630" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="div5" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="535" as="sourcePoint" />
+            <mxPoint x="630" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="div6" edge="1" parent="1" style="edgeStyle=none;endArrow=none;strokeColor=#CCCCCC;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="625" as="sourcePoint" />
+            <mxPoint x="630" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
