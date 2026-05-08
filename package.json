@@ -8,6 +8,9 @@
     "format:check": "prettier . --check"
   },
   "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp", "unrs-resolver", "workerd"]
+  },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@typescript-eslint/eslint-plugin": "^8.44.1",
