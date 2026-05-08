@@ -37,7 +37,7 @@
 - 言語: TypeScript
 - フレームワーク: Hono
 - ORマッパー: Drizzle
-- 認証: Clerk
+- 認証: better-auth
 - ホスティング: Cloudflare Workers
 - DB: Cloudflare D1
 - ストレージ: Cloudflare R2
